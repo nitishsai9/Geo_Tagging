@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "737944282128",
+    "firebase_url": "https://medi-hack-c53ad.firebaseio.com",
+    "project_id": "medi-hack-c53ad",
+    "storage_bucket": "medi-hack-c53ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737944282128:android:af0577a2a1c1cb55e59695",
+        "android_client_info": {
+          "package_name": "com.example.geo_tagging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737944282128-q28732e366ndl18ok8lhdlpi5b4u6faq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChjRT2v1sDm7mOp9PmrMwfR45zLOiQDcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737944282128-q28732e366ndl18ok8lhdlpi5b4u6faq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
