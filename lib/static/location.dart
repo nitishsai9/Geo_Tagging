@@ -1,8 +1,8 @@
-import 'package:firebase_storage/firebase_storage.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:geo_tagging/static/temp1.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 
 
@@ -29,8 +29,11 @@ class _LogicPageState extends State<LogicPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             if (_currentPosition != null)
-              Text(
+              SelectableText(
                   "LAT: ${_currentPosition.latitude}, LNG: ${_currentPosition.longitude}"),
+         
+                    
+
             FlatButton(
 
               child: Text("Get location"),
@@ -38,6 +41,17 @@ class _LogicPageState extends State<LogicPage> {
                 _getCurrentLocation();
               },
             ),
+
+            FlatButton(
+
+              child: Text("Copy The location by long press and click Me"),
+              onPressed: () {
+               Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => MyApp1()
+                            ));
+              },
+            ),
+            
           ],
         ),
       ),

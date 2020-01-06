@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'location.dart';
+import 'package:geo_tagging/static/location.dart';
 import 'cards.dart';
 import 'CustomIcon.dart';
+import 'location.dart';
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => new _MyAppState();
@@ -54,11 +56,11 @@ class _MyAppState extends State<MyApp> {
                     SizedBox(
                 height: 32.0,
               ),
-              ProductCard(0xFF98FB98,"assests/animal.png","New FAuna",MyApp()),
+              ProductCard(0xFF98FB98,"assests/animal.png","New FAuna",LogicPage()),
                 SizedBox(
                 height: 32.0,
               ),
-              ProductCard(0xFF87CEEB,"assests/animal.png", "new ",MyApp())
+              ProductCard(0xFF87CEEB,"assests/animal.png", "new ",LogicPage())
             ],
           ),
         ),
