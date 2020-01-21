@@ -2,6 +2,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:geo_tagging/static/home.dart';
+import 'package:geo_tagging/static/location.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
@@ -87,8 +89,7 @@ class _MyAddPageState extends State<MyAddPage> {
     final StorageUploadTask task = ref.putFile(image);
 
 
-    var part1 =
-        'https://firebasestorage.googleapis.com/v0/b/medi-hack-c53ad.appspot.com/o/';
+    var part1 ='https://firebasestorage.googleapis.com/v0/b/medi-hack-c53ad.appspot.com/o/';
 
     var fullPathImage = part1 + fullImageName2;
     print(fullPathImage);
@@ -98,7 +99,10 @@ class _MyAddPageState extends State<MyAddPage> {
       DocumentReference ref = await db.collection('geotagging').add(
           {'name': '$name', 'position': '$pos', 'image': '$fullPathImage'});
       setState(() => id = ref.documentID);
-      Navigator.of(context).pop(); //regrese a la pantalla anterior
+    
+
+
+
     }
   }
 

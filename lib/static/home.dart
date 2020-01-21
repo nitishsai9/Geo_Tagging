@@ -3,6 +3,7 @@ import 'package:geo_tagging/static/location.dart';
 import 'cards.dart';
 import 'CustomIcon.dart';
 import 'location.dart';
+import 'retrive.dart';
 
 class MyApp extends StatefulWidget {
   @override
@@ -44,23 +45,26 @@ class _MyAppState extends State<MyApp> {
                 child: Padding(
                   padding: EdgeInsets.only(top: 30.0, bottom: 25.0),
                   child:
-                      Image.asset("assests/icon.png", width: 92.0, height: 63.0),
+                      Image.asset("assests/icon.png", width: 102.0, height: 63.0),
                 ),
               ),
-              ProductCard(0xFFfaecfb,"assests/animal.png","Animal Poaching",LogicPage()),
+              ProductCard(0xFFfaecfb,"assests/animal.png","Report Animal Poaching",LogicPage()),
               SizedBox(
                 height: 32.0,
               ),
-              ProductCard(0xFFf8e1da,"assests/animal.png",
-                  "Plants poaching",MyApp()),
-                    SizedBox(
+              ProductCard(0xFFfaecfb,"assests/animal.png","Report Plant Poaching",LogicPage()),
+              SizedBox(
                 height: 32.0,
-              ),
-              ProductCard(0xFF98FB98,"assests/animal.png","New FAuna",LogicPage()),
+              ), 
+
+              ProductCard(0xFF98FB98,"assests/animal.png","Save Nearby",MyListPage()),
                 SizedBox(
                 height: 32.0,
               ),
-              ProductCard(0xFF87CEEB,"assests/animal.png", "new ",LogicPage())
+               ProductCard(0xFF98FB97,"assests/animal.png","Game",MyListPage()),
+                SizedBox(
+                height: 32.0,
+              ),
             ],
           ),
         ),
